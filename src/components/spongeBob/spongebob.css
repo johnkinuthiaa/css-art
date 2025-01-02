@@ -1,0 +1,177 @@
+.spongie_container{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    flex-direction: column;
+}
+.sea{
+    position: relative;
+    height: 500px;
+    background-color: rgb(76, 59, 207);
+}
+.sand{
+    position: relative;
+    height: 100px;
+    background-color: rgb(255, 242, 194);
+    border-radius: 10px;
+
+}
+.tarmac {
+    height: 300px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+.marks_on_tarmac{
+    position: relative;
+    top: 150px;
+    border: 10px dashed white;
+
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.upper{
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    position: relative;
+    bottom: 300px;
+}
+.eyes{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    gap: 3px;
+}
+.eyes>*{
+    background-color: white;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    line-height: 0;
+    border: 2px solid black;
+}
+.eyes>*>.pupil{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border: 8px solid lightseagreen;
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+.nose{
+    height: 50px;
+    width: 30px;
+    border-top: 3px solid rgb(0,0,0);
+    border-radius: 50px 50px ;
+    position: relative;
+    top: -50px;
+    left: 85px;
+    background-color: inherit;
+}
+.mouth{
+    height: 60px;
+    border: 2px solid black;
+    position: relative;
+    bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+    width: 80%;
+    border-radius: 10px 10px 100px 100px;
+    margin: 0 auto;
+}
+.cheeks{
+    display: flex;
+    position: relative;
+}
+.cheeks>*{
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    border-top: 2px solid red;
+    position: relative;
+}
+.cheek1{
+    bottom: 20px;
+    right: 60px;
+    transform: rotatez(-30deg);
+}
+.cheek2{
+    bottom: 20px;
+    right: -60px;
+    transform: rotatez(30deg);
+}
+.teeth{
+    display: flex;
+    position: relative;
+    gap: 5px;
+    bottom: 29px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.teeth>*{
+    height: 30px;
+    width: 20px;
+    background-color: white;
+    border: 2px solid;
+}
+.tongue{
+    height: 100px;
+    width: 10px;
+    position: relative;
+}
+.lower{
+    height: 90px;
+    width: 200px;
+    background-color: rgb(117, 78, 26);
+    position: relative;
+    bottom: 300px;
+
+}
+.shirt{
+    height: 40px;
+    background-color: white;
+}
+.tie{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+.tie>*{
+    background-color: red;
+    border: 2px solid black;
+}
+.tie__top{
+    height: 30px;
+    width: 50px;
+}
+
+
+.short{
+
+}
+.legs{
+
+}
+.leg{
+
+}

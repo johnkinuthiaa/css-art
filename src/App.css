@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.view{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+}
+.sky{
+    position: relative;
+    top: 0;
+    background-color: rgb(8, 194, 255);
+    height: 500px;
+
+}
+.clouds{
+    display: flex;
+    align-items: baseline;
+    animation-name: wind;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+.circle{
+    position: relative;
+    background-color: #FFFF;
+    top: 30px;
+    left: 20px;
+    border-radius: 50px 50px 0 0;
+}
+#circle1{
+    height: 50px;
+    width: 100px;
+}
+#circle2{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px 50px 0 0;
+    left: -5px;
+}
+#circle3{
+    height: 50px;
+    width: 100px;
+    left: -25px;
+}
+.grass{
+    margin-top: -50px;
+    height: 200px;
+    border-top-left-radius: 50px;
+    background-color: rgb(92, 179, 56);
+    display: flex;
+}
+.stem{
+    width: 10px;
+    height: 100px;
+    background-color: rgb(153, 124, 112);
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    bottom: 30px;
+}
+.trees{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-left: 10px;
+}
+.leaves{
+    height: 100px;
+    position: relative;
+    width: 50px;
+    background-color: rgb(142, 180, 134);
+    border-radius: 50px 50px 10px 0;
+
+
+}
+.road{
+    background-color: rgb(61, 61, 61);
+    height: 250px;
+
+}
+.marks{
+    position: relative;
+    border: 10px dashed white;
+    height: 10px;
+    bottom: -120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart1{
+    height: 100px;
+    bottom: 200px;
+
+    right: 0;
+    position: absolute;
+    animation-name: drive;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+
+}
+.cart2{
+    height: 100px;
+    width: 100px;
+    right: 0;
+    bottom: 20px;
+    position: absolute;
+    animation-name: drive;
+    animation-delay: 2s;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+@keyframes drive {
+    from{
+        transform: translateX(100px);
+    }
+    to{
+        transform: translateX(-1930px);
+    }
+}
+@keyframes wind {
+    from{
+        transform: translateX(10px);
+    }
+    to{
+        transform: translateX(1950px);
+    }
+}
