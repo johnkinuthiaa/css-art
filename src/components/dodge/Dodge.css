@@ -1,0 +1,124 @@
+
+.view{
+    display: flex;
+    position: fixed;
+    height: 100vh;
+    flex-direction: column;
+    width: 100%;
+}
+.sky{
+    background-color: deepskyblue;
+    position: relative;
+    height: 300px;
+
+}
+.clouds{
+    display: flex;
+    gap: 5px;
+    justify-content: space-evenly;
+
+}
+.cloud{
+    display: flex;
+    position: relative;
+    top: 10px;
+    align-items: baseline;
+}
+
+.part1{
+    height: 50px;
+    width: 100px;
+    border-radius: 50% 50% 0 0;
+    position: relative;
+    background-color: white;
+    z-index: 1;
+
+}
+.mid{
+    height: 100px;
+    border-radius: 50% 50% 0 0;
+    width: 100px;
+
+    position: relative;
+    background-color: white;
+
+
+}
+.part2{
+    height: 50px;
+    width: 100px;
+    border-radius: 50% 50% 0 0;
+    position: relative;
+    background-color: white;
+    right: -10px;
+
+}
+.peak{
+    /*background-color:slategrey;*/
+    height: 100px;
+    bottom: 100px;
+    left: 10px;
+    width: 100px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #555;
+    position: relative;
+
+}
+.land{
+    background-color: saddlebrown;
+    height: 500px;
+    position: relative;
+}
+.grass{
+    background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh1FPfK2a6HEv4Lz0_uyEL28idcvOXWWnumQ&s");
+    height: 200px;
+}
+.road{
+    position: relative;
+    height: 500px;
+    background-color: #555555;
+    width: 100%;
+
+}
+.dodge{
+    position: relative;
+    left: 1600px;
+    bottom: 200px;
+    animation-name: drive;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+
+}
+.marks_on_tarmac{
+    bottom: 250px;
+    position: relative;
+    border-bottom: 10px dashed white;
+    width: 100%;
+    animation-name: moving;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+}
+/*@keyframes moving {*/
+/*    from{*/
+/*        transform: translateX(0) ;*/
+/*    }*/
+/*    to{*/
+/*        transform: translateX(500px);*/
+/*    }*/
+
+/*}*/
+/*@keyframes drive {*/
+/*    from{*/
+/*        transform: translateX(0);*/
+
+/*    }*/
+/*    to{*/
+/*        transform: translateX(-1900px);*/
+/*    }*/
+
+/*}*/

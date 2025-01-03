@@ -1,14 +1,12 @@
 
 import './App.css'
-import Ball from "./components/ball/Ball.jsx";
+import Dodge from "./components/dodge/Dodge.jsx";
 
 function App() {
   return (
       <div>
-          <Ball/>
-          <div >
-              didn&#39;t gnbr ifnbvjbnn fjing finjdn zbdsufb usbg
-          </div>
+          <Dodge/>
+
       </div>
   )
 }
